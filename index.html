@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fagylalt Rendelő űrlap</h1>
+      <form id="iceCreamForm">
+          <label for="name">Saját név:</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <br>
+
+          <label for="password">Jelszó:</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+          <span id="passwordCount">0 / 8</span>
+          <br>
+          <br>
+
+          <label for="iceCream">Fagylaltok:</label>
+          <input type="text" id="iceCream" name="iceCream">
+          <select id="iceCreamDropdown" name="iceCreamDropdown" class="from-select" aria-label="Disabled select example">
+              
+          </select>
+          <br>
+          <br>
+
+          <button type="button" onclick="handleSubmit()">Rendelés</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+        <div id="app"></div>
+        <script type="module" src="/main.js"></script>
+    </div>
+  </body>
+</html>

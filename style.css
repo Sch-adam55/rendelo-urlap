@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+}
+.valid {
+  background-color: lightgreen;
+}
+.invalid {
+  background-color: lightyellow;
+}
+.message {
+  margin-top: 10px;
+  font-weight: bold;
+}
